@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -56,3 +62,40 @@ footer section .fas{
 footer section{
     text-align: center;
 } 
+
+main{
+    max-width: 90%;
+}
+
+.item{
+    margin-bottom: 10px;
+    /* border: solid 5px red; (para ver si el bordeanda) */
+}
+
+.elementos{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+/* Celular */
+@media ( max-width: 480px){
+    .descuento, .descripcion { 
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 480px){
+   .item{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+   .burger-menu{
+    display: none;
+   }
+}
+
+
