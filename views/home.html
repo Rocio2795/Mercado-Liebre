@@ -11,26 +11,31 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/normalize.css">
+    <script src="  " crossorigin=""></script>
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
 <body>
-    <header>
-        <div>
+    <header class="main-header">
+        <div class="main-header-top-bar">
             <img src="/imagen/logo-mercado-liebre.svg" alt="logo-mercado-liebre" width="300">
+            <h2 class="copy-header"><i class="fa-solid fa-hand-holding-dollar"></i>
+                comprar en cuotas y sin tarjeta de credito
+            </h2>
         </div>
-        <input type="text" placeholder="Buscar productos, marcas" />
-        <i class="fas fa-search"></i><p> comprar en cuotas y sin tarjeta de credito </p>
-        <nav >
-            <ul>
+        <input type="text" placeholder="Buscar productos, marcas">
+        <i class="fas fa-search"></i>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
                 <li>Ofertas</li>
                 <li>Tienda oficiales</li>
                 <li>Vender</li>
                 <li>Ayuda</li>
             </ul>
 
-            <ul>
+            <ul class="right-navbar">
                 <li>Crear tu cuenta <i class="fas fa-id-card"></i></li>
                 <li>Igresar <i class="fas fa-sign-in-alt"></i></li>
                 <li>Mis Compras <i class="fas fa-shopping-basket"></i></li>
@@ -42,16 +47,16 @@
     </header>
     <main>
         <section>
-                <h2>Basado en tu última visita</h2>
+            <h2>Última visita</h2>
 
-                <div class="item">
-                    <img src="/imagen/img-cafetera-moulinex.jpg" alt="cafetera-moulinex" width="300">
-                    <div class="elementos">
-                        <p class="precios">$6770</p>
-                        <p class="descuento">40% OFF</p>
-                        <p class="descripcion">Cafetera-Moulix</p>
-                    </div>
+            <div class="item">
+                <img src="/imagen/img-cafetera-moulinex.jpg" alt="cafetera-moulinex" width="300">
+                <div class="elementos">
+                    <p class="precios">$6770</p>
+                    <p class="descuento">40% OFF</p>
+                    <p class="descripcion">Cafetera-Moulix</p>
                 </div>
+            </div>
 
             <div class="item">
                 <img src="/imagen/img-samsung-galaxy-s10.jpg" alt="samsung-galaxy-s10" width="300">
@@ -73,7 +78,7 @@
         </section>
 
         <section>
-            <h2>Seccion de Ofertas</h2>
+            <h2> Ofertas</h2>
 
             <div class="item">
                 <img src="/imagen/img-cafetera-moulinex.jpg" alt="cafetera-moulinex" width="300">
