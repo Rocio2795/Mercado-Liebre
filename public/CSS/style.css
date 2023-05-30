@@ -5,21 +5,113 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto';
+}
 
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    width: 200px;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align:center;
+}
 
 main {
     max-width: 90%;
+    margin: 10px;
+    text-align: center;
 }
 
+
 .item {
+    padding: 0 15px;
     margin-bottom: 10px;
-    /* border: solid 5px red; (para ver si el bordeanda) */
+    position: relative;
+    margin: 30px 15px;
 }
+
+.item imag{
+    width: 100%;
+}
+
+.item:hover .elementos{
+    opacity: 1;
+}
+
+.item .elementos{
+    background-color: rgba(0,0,0,0.5);
+    color: #ffff;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 450ms;
+}
+
+
 
 .elementos {
     border-top: solid 1px #ebebeb;
     padding: 15px;
+    }
+
+.elementos{
+        display: flex;
+        width: 50%;
+      }
+
+.register{
+    padding: 20px 15px;
+    margin-top: 240px;
 }
+
+.register{
+    margin-bottom: 15px;
+}
+
+.register label{
+    margin-bottom: 5px;
+    font-style: inherit;
+    display: block;
+}
+
+.control{
+    width: 100%;
+    padding: 8px;
+}
+
+.boton-formulario:hover{
+    opacity: 1;
+    background-color: #0022AA;
+}
+
+
+.boton-formulario{
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+    
 
 /* Celular */
 @media (max-width: 480px) {
@@ -68,15 +160,23 @@ main {
     .main-navbar li {
         margin: 0 5px;
     }
+    
 }
 
 @media (min-width: 1200px) {
+    .logo {
+        width: 250px;
+    }
     .main-header-top-bar,
     .main-navbar {
         max-width: 1200px;
         margin: auto;
     }
+    .main-header-top-bar{
+        align-items: center;
+    }
     .copy-header {
+        margin: 0;
         max-width: none;
         font-size: 18px;
         font-weight: 400;
@@ -90,4 +190,11 @@ main {
     .main-navbar a {
         font-size: 19px;
     }
+
+}
+
+footer {
+    font-size: 2em;
+    text-align: center;
+    margin: 10px;
 }
